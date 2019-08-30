@@ -1,0 +1,28 @@
+1、ubuntu 16.04  
+2、安装docker
+	内核10.3+
+3、教程：官网
+4、image 、container
+
+////////////////////
+5、我们做的工作
+	生成一个镜像：包含 jdk+mysql+nginx+jar
+	其他项目直接启动一个容器。
+
+6、怎么生成镜像
+	a、拉取一个基础镜像ubuntu 16.04。在基础上，安装环境。
+	问题：装好之后大概1.2G。
+	b、alpine 精简系统5M。
+	使用dockerfile构造镜像。
+	alpine:lastest + openjdk + maridb(mysql)+ nginx +jar
+	
+7、怎么使用
+	服务器上装docker。
+	拉取我们的镜像。 pull
+	启动容器。 run
+	(可以优化)：手动执行mysql脚本、手动启动java服务。
+	注：依赖redis。
+	
+8、熟悉一些docker命令
+
+	
